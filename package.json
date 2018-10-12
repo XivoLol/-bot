@@ -2,9 +2,9 @@
   "name": "Mrx Dev",
   "description": "--Devloper--",
   "version": "0.0.0",
-  "main": "botdiscord.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node botdiscord.js"
+    "start": "node bot.js"
   },
   "dependencies": {
     "array-sort": "1.0.0",
