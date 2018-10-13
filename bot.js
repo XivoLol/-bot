@@ -406,7 +406,7 @@ Rocket.on('message', message => {//invite
 .setTitle("Click Here to invite XivoBot")
 .setAuthor("XivoBot", "https://media.discordapp.net/attachments/500416283700101129/500602919855325184/XivoBot.png?width=241&height=241")
 .setTimestamp()
-.setURL("https://discordapp.com/api/oauth2/authorize?client_id=${user.id}&permissions=8&scope=bot")
+.setURL("https://discordapp.com/api/oauth2/authorize?client_id=500383292395356161&permissions=8&scope=bot")
   message.author.sendEmbed(embed);
     }
 });
