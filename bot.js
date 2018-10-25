@@ -358,6 +358,8 @@ Rocket.on('message', message => {//help msg
   ❖${prefix}** mute ** ==>**لاسكات عضو في السيرفر**
   ❖${prefix}** unmute ** ==>**لفك الاسكات عن عضو في السيرفر**
   ❖${prefix}** clear ** ==>**لمسح كل رسائل الشات**  `);
+          }
+  });
 Rocket.on('message', message => {//help msg
     if (message.author.bot) return;
      if (message.content === prefix + "help-general") {
@@ -375,6 +377,8 @@ message.author.sendMessage(`         __**الاوامر العامة :coffee:**_
   ❖${prefix}** roles ** ==>**لكي ترى كل رتب السيرفر**
   ❖${prefix}** rooms ** ==>**لكي ترى كل قنوات السيرفر**
   ❖${prefix}** date ** ==>**لكي ترى التاريخ** `);
+          }
+  });
 Rocket.on('message', message => {//help msg
     if (message.author.bot) return;
      if (message.content === prefix + "help-games") {
@@ -386,6 +390,8 @@ message.author.sendMessage(`
   ❖${prefix}** sarahah ** ==>**لكي يعطيك جمل صراحة عشوائية**
   ❖${prefix}** cat ** ==>**لكي ترى صور قطط عشوائية**
   ❖${prefix}** roll ** ==>**لاختيار رقم عشوائي** `);
+          }
+  });
 Rocket.on('message', message => {//help msg
     if (message.author.bot) return;
      if (message.content === prefix + "help-quran") {
