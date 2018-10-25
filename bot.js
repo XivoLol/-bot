@@ -334,7 +334,7 @@ Rocket.on('message', message => {//rooms
 });
 Rocket.on('message', message => {//help msg
     if (message.author.bot) return;
-     if (message.content === prefix + "help") {
+     if (message.content === prefix + "help-admin") {
         message.react("☑")
 
 
@@ -357,8 +357,12 @@ Rocket.on('message', message => {//help msg
   ❖${prefix}** band ** ==>**لحصر شخص من السيرفر**
   ❖${prefix}** mute ** ==>**لاسكات عضو في السيرفر**
   ❖${prefix}** unmute ** ==>**لفك الاسكات عن عضو في السيرفر**
-  ❖${prefix}** clear ** ==>**لمسح كل رسائل الشات**
-        __**الاوامر العامة :coffee:**__
+  ❖${prefix}** clear ** ==>**لمسح كل رسائل الشات**  `);
+Rocket.on('message', message => {//help msg
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-general") {
+        message.react("☑")
+message.author.sendMessage(`         __**الاوامر العامة :coffee:**__
   ❖${prefix}** avatar ** ==>**لكي يعطيك رابط صورتك او صورة صديقك**
   ❖${prefix}** serveravatar ** ==>**لكي يعطيك رابط صورة السيرفر**
   ❖${prefix}** server ** ==>**لمعلومات السيرفر**
@@ -370,13 +374,23 @@ Rocket.on('message', message => {//help msg
   ❖${prefix}** color ** ==>**لتغيير لونك**
   ❖${prefix}** roles ** ==>**لكي ترى كل رتب السيرفر**
   ❖${prefix}** rooms ** ==>**لكي ترى كل قنوات السيرفر**
-  ❖${prefix}** date ** ==>**لكي ترى التاريخ**
+  ❖${prefix}** date ** ==>**لكي ترى التاريخ** `);
+Rocket.on('message', message => {//help msg
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-games") {
+        message.react("☑")
+message.author.sendMessage(`
         __**الاوامر الترفيهية :video_game:**__
   ❖${prefix}** mariam ** ==>**للعب مع مريم**
   ❖${prefix}** cuttweet ** ==>**لكي يعطيك جمل كت تويت عشوائية**
   ❖${prefix}** sarahah ** ==>**لكي يعطيك جمل صراحة عشوائية**
   ❖${prefix}** cat ** ==>**لكي ترى صور قطط عشوائية**
-  ❖${prefix}** roll ** ==>**لاختيار رقم عشوائي**
+  ❖${prefix}** roll ** ==>**لاختيار رقم عشوائي** `);
+Rocket.on('message', message => {//help msg
+    if (message.author.bot) return;
+     if (message.content === prefix + "help-quran") {
+        message.react("☑")
+message.author.sendMessage(`
        __**القرآن الكريم :kaaba: **__
   ❖${prefix}** quran 1 ** ==>**القران الكريم كامل بصوت الشيخ عبدالباسط عبدالصمد **
   ❖${prefix}** quran 2 ** ==>**سورة البقرة كاملة - القارئ الحاج ميثم التمار**
@@ -397,7 +411,7 @@ Rocket.on('message', message => {//help msg
 
 Rocket.on('message', message => {//help
      if (message.content === "x!help") {
-  message.channel.send('**تم الارسال لك في الخاص | :ballot_box_with_check:**')
+  message.channel.send('**Choose : x!help-admin , x!help-general , x!help-games , x!help-quran**')
     }
 });
 Rocket.on('message', message => {//invite
